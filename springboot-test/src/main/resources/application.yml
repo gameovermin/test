@@ -1,0 +1,21 @@
+server:
+  port: 8080
+
+# Spring Boot 와 JPA를 이용해 ORM을 구현
+# 애플리케이션 설정에서 연결할 DB를 명시
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/test
+    username: root
+    password: qorhvms1219!
+  #  profiles:
+  #    active:
+  #      - dev
+  #      - prod
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+# ! 느낌표 주석 불가 #
+
